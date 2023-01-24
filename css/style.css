@@ -727,11 +727,12 @@ body {
 		margin-bottom: 16px;
 	}
 	.logo {
-		background: url(../img/footer/Logo.svg) center / cover no-repeat;
 		padding: 21px 65.5px;
 	}
 	.footer__logo {
+		display: block;
 		margin: 0px auto 16px auto;
+		background: url(../img/footer/Logo.svg) center / cover no-repeat;
 	}
 	.footer__social {
 		justify-content: space-evenly;
