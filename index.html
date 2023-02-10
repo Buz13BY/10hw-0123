@@ -22,23 +22,48 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container">
-				<div class="header-content">
-					<a href="#" class="burger"></a>				
-					<a href="#" class="logo"></a>
-					<div class="nav">
-						<ul class="nav__list">
-							<li class="nav__list-item"><a href="">О нас</a></li>
-							<li class="nav__list-item"><a href="">Проекты</a></li>
-							<li class="nav__list-item"><a href="">Этапы</a></li>
-							<li class="nav__list-item"><a href="">Отзывы</a></li>
-							<li class="nav__list-item"><a href="">Контакты</a></li>
-							<li class="nav__list-item"><a href="#" class="nav__search-icon"></a></li>						
-						</ul>					
-					</div>	
+			<div class="container header__container">
+				<button class="header__button_burger" id="burger">
+					<span></span><span></span><span></span>
+				</button>
+				<div class="header__logo">
+					<img src="/img/header/header-logo.svg" alt="Logo">
 				</div>
+				<nav class="header__nav">
+					<ul class="nav__list">
+						<li class="nav__list-item">
+							<a href="#" class="header__nav-link">
+								О нас
+							</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#" class="header__nav-link">
+								Проекты
+							</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#" class="header__nav-link">
+								Этапы
+							</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#" class="header__nav-link">
+								Отзывы
+							</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#" class="header__nav-link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<button class="header__button_search">
+						<img src="/img/header/search.svg" alt="search">
+					</button>
+				</nav>
 			</div>
 		</header>
+	</div>	
 		<div class="container">
 			<section class="section__hero">
 				<div class="hero-swiper">
@@ -60,9 +85,11 @@
 				  <div class="hero-content">
 					<h1 class="hero-title">Проектные решения любой сложности</h1>
 					<h2 class="hero-subtitle">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</h2>
-					<div class="button">
-						<a href="#">Заказать расчёт</a>
-					</div>
+					<a href="#">
+						<div class="button">
+							Заказать расчёт
+						</div>					
+					</a>
 				</div>
 			</section>
 			<section class="section__about">
