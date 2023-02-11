@@ -114,10 +114,27 @@ body {
 
 /* HERO */
 .section__hero {
+	position: relative;
 	width: 100%;
 	min-height: 620px;
-	padding: 100px 0px 0px 80px;
+	padding: 0px 0px 0px 0px;
+	/* background: url(../img/hero/hero-bg.jpg) center / cover no-repeat; */
+}
+.hero-slide1 {
+	min-height: 620px;
 	background: url(../img/hero/hero-bg.jpg) center / cover no-repeat;
+}
+.hero-slide2 {
+	min-height: 620px;
+	background: url(../img/hero/hero-bg1.jpg) center / cover no-repeat;
+}
+.hero-slide3 {
+	min-height: 620px;
+	background: url(../img/hero/hero-bg2.jpg) center / cover no-repeat;
+}
+.section-hero__content{
+	position: absolute;
+	z-index: 3;
 }
 .section__hero_title {
 	margin: 0;
