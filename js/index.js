@@ -9,4 +9,19 @@ document.addEventListener("DOMContentLoaded", function(){
 		  clickable: true,
 		},
 	  });
+	  document.querySelectorAll(".how__step").forEach(function(step){
+		step.addEventListener("click", function(event){
+			const path=event.currentTarget.dataset.path
+			console.log(path)
+			document.querySelectorAll(".section__how_bottom-left").forEach(function(tabContent){
+				tabContent.classList.remove("active")
+			})
+			document.querySelectorAll(".section__how_bottom-right").forEach(function(tabContentR){
+				tabContentR.classList.remove("active")
+			})
+			document.querySelector(`[data-target="${path}"]`).classList.add("active")
+		})
+	  })
+
+	  
 })
