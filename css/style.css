@@ -288,7 +288,8 @@ body {
 	color: #fff;
 }
 .about__button:hover {
-	background-color: #fff;
+	background-color: #ffffff62;
+	color: #222222;
 }
 .section__about-bottom-right {
 	display: flex;
@@ -415,10 +416,65 @@ body {
 	border-top: 1px solid #CACACA;
 	border-bottom: 1px solid #CACACA;
 }
-.list_item_text {
+.section__faq .list_item_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 133.33%;
+	margin: 0;
+	border: 1px transparent;
+	padding: 39px 0;
+	border-top: 1px solid #CACACA;
+	border-bottom: 1px solid #CACACA;
+	transition: color .5s;
+}
+.section__faq .list_item_title:hover {
+	border-color: #FF9900;
+	color: #FF9900;
+}
+.section__faq .list_item_title:hover img ellipse{
+	fill:#FF9900;
+}
+.section__faq .list_item_title:not(:first-child){
+	margin-top: -1px;
+}
+.list_item-title-icon {
+	display: block;
+}
+.section__faq .list_item_text{
+	margin: -10px 0 30px 0;
+	height: 100% !important;
+	background-color: transparent;
+	padding: 0;
+	max-width: 1003px;
+}
+.section__faq .list_item_text p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+}
+.section__faq .list_item_text p:not(:first-child){
+	margin-top: 30px;
+}
+.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	display: none;
+}
+.ui-widget-content {
+    border: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active  {
+	color: inherit;
+}
+.ui-button.ui-state-active:hover{
+	color:#FF9900;
 }
 .list_item_img {
 	padding: 25px;
