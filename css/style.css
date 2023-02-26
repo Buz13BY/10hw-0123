@@ -425,21 +425,32 @@ body {
 	font-size: 24px;
 	line-height: 133.33%;
 	margin: 0;
-	border: 1px transparent;
+	border: 1px solid transparent;
 	padding: 39px 0;
-	border-top: 1px solid #CACACA;
-	border-bottom: 1px solid #CACACA;
+	border-top-color: #CACACA;
+	border-bottom-color: #CACACA;
 	transition: color .5s;
 }
+
 .section__faq .list_item_title:hover {
-	border-color: #FF9900;
+	border-top-color: #FF9900;
+	border-bottom-color: #FF9900;
 	color: #FF9900;
 }
-.section__faq .list_item_title:hover img ellipse{
+.list_item_title .faq__item-icon{
+	display: block;
+}
+.list_item_title:hover .faq__item-icon ellipse {
 	fill:#FF9900;
 }
-.section__faq .list_item_title:not(:first-child){
-	margin-top: -1px;
+.list_item_title:hover .faq__item-icon path {
+	fill:#FFf;
+}
+.list_item_title, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border-bottom: none;
+}
+.section__faq .list_item_title:not(:last-child){
+	/* padding-bottom: -1px; */
 }
 .list_item-title-icon {
 	display: block;
@@ -472,6 +483,18 @@ body {
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active  {
 	color: inherit;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
 }
 .ui-button.ui-state-active:hover{
 	color:#FF9900;
